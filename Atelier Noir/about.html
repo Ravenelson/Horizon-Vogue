@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="general.css">
+    <title>About — Horizon Vogue</title>
+</head>
+
+<body class="">
+    <header class="navigation-bar">
+        <nav class="nav-container">
+            <div class="img-container">
+                <img src="logo (2).png" alt="Atelier Noir logo" class="img-logo">
+            </div>
+            <ul class="nav-items">
+                <li class="nav-list">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-list">
+                    <a href="events.html" class="nav-link">Events</a>
+                </li>
+                <li class="nav-list">
+                    <a href="products.html" class="nav-link">Products</a>
+                </li>
+                <li class="nav-list">
+                    <a href="board.html" class="nav-link">Boards</a>
+                </li>
+                <li class="nav-list">
+                    <a href="contact.html" class="nav-link">Contacts</a>
+                </li>
+                <li class="nav-list">
+                    <a href="dom.html" class="nav-link">DOM</a>
+                </li>
+            </ul>
+
+            <div class="cart-icon" onclick="openSlide()">🛒
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+
+            <div class="hamburger-container" onclick="openNav()">
+                <p class="hamburger">&#9776;</p>
+            </div>
+        </nav>
+    </header>
+
+    <div class="slide-container" id="myNav">
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+        <ul class="slide-menu-container">
+            <li class="nav-list"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-list"><a href="events.html" class="nav-link">Events</a></li>
+            <li class="nav-list"><a href="products.html" class="nav-link">Products</a></li>
+            <li class="nav-list"><a href="board.html" class="nav-link">Boards</a></li>
+            <li class="nav-list"><a href="contact.html" class="nav-link">Contacts</a></li>
+            <li class="nav-list"><a href="dom.html" class="nav-link">DOM</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero with static background image -->
+    <main>
+        <section class="about-hero">
+            <div class="hero-overlay">
+                <h1>About Horizon Vogue</h1>
+                <p class="lead">A fashion house where craftsmanship, heritage and modern design converge. We create pieces that tell stories garments tailored with care, curated for the moments that matter.</p>
+                <p class="lead">From bespoke bridal gowns to elevated ready-to-wear, Horizon Vogue exists to celebrate individuality through fabrics, cut and meticulous detail. Pop in for a fitting — we make magic with needle and thread.</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <h2>Our Philosophy</h2>
+            <p>Horizon Vogue is a small atelier dedicated to thoughtful design and sustainable practices. We combine traditional tailoring techniques with contemporary silhouettes, sourcing better-quality fabrics and prioritising local artisanship. Every collection is imagined as a conversation between past and present, made personal for each client.</p>
+            <p>We believe clothes should empower — whether that means a statement gown for your milestone event or a wardrobe staple worn every week. Our team is here to guide, craft, and tailor pieces that become part of your story.</p>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links-group">
+                <ul>
+                    <li><a href="/about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-cta">
+                <h3>Contact Us</h3>
+                <a href="mailto:your-email@fashionhouse.com" class="cta-button">Book an Appointment</a>
+            </div>
+
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://x.com/" target="_blank" aria-label="X (formerly Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Horizon Vogue. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

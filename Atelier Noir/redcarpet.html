@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="general.css">
+<title>Casual Collection - Horizon Vogue</title>
+</head>
+
+<body class="category-page">
+<header id="nav" class="navigation-bar">
+    <nav class="nav-container">
+        <div class="img-container">
+            <img src="logo (2).png" alt="" class="img-logo">
+        </div>
+        <ul class="nav-items">
+            <li class="nav-list">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-list">
+                <a href="events.html" class="nav-link">Events</a>
+            </li>
+            <li class="nav-list">
+                <a href="products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-list">
+                <a href="board.html" class="nav-link">Boards</a>
+            </li>
+            <li class="nav-list">
+                <a href="contact.html" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-list">
+                <a href="dom.html" class="nav-link">DOM</a>
+            </li>
+        </ul>
+
+        <div class="cart-icon" onclick="openSlide()">🛒
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+
+        <div class="hamburger-container" onclick="openNav()">
+            <p class="hamburger">&#9776;</p>
+        </div>
+    </nav>
+</header>
+
+<!-- site marquee: announcements below navbar -->
+
+<div class="slide-container" id="myNav">
+    <button class="closebtn" onclick="closeNav()">&times;</button>
+
+    <ul class="slide-menu-container">
+        <li class="nav-list">
+            <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-list">
+            <a href="events.html" class="nav-link">Events</a>
+        </li>
+        <li class="nav-list">
+            <a href="products.html" class="nav-link">Products</a>
+        </li>
+        <li class="nav-list">
+            <a href="board.html" class="nav-link">Boards</a>
+        </li>
+        <li class="nav-list">
+            <a href="contact.html" class="nav-link">Contacts</a>
+        </li>
+        <li class="nav-list">
+            <a href="dom.html" class="nav-link">DOM</a>
+        </li>
+    </ul>
+</div>
+
+<main class="product-header">
+    <header class="product-header">
+        <h1>Red Carpet Collection</h1>
+        <h3>Glamour & Luxury — Statement pieces for standout events.</h3>
+    </header>
+    <div class="site-marquee" aria-hidden="true">
+    <div class="marquee-inner">
+        <span>Winter Fashion Show • Dec 15 • Holiday Collection Launch • Nov 25 • Master Styling Workshop • Jan 10 • Trunk Show • Dec 10</span>
+    </div>
+</div>
+
+    <hr class="section-divider"/>
+</main>
+
+<section class="women-section">
+    <div class="women-container">
+        <div class="toggle-buttons">
+            <button class="section-toggle" onclick="womenOpen()">Women Wears</button>
+            <button class="section-toggle2" onclick="menOpen()">Men Wears</button>
+        </div>
+    </div>
+</section>
+
+<section class="video-grid" id="women-grid">
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="CHARR DRESS FOR WOMEN" data-price="120000"
+            data-image="images/cas-w0-01.jpg" data-desc="Perfect match for you."
+            data-des="Elegant long dress perfect for any occasion." onclick="openProduct(this)">
+            <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/0293/9277/files/10-25-23Studio2_KJ_RL_11-22-37_8_DXD232170_Red_67782_SG.jpg?v=1698789797&width=350&height=524&crop=center" alt="">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/0293/9277/files/10-22-24_S2_11_KYPD4061420_Silver_CXB_RL_14-21-15_16038_CM.jpg?v=1729720708&width=350&height=524&crop=center" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/0293/9277/files/12-22-23_S2_1_KD9511BLACK_Black_CZ_RL_14-19-08_3805_PXF.jpg?v=1703808642&width=350&height=524&crop=center" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/0293/9277/files/07-17-23Studio2_KJ_RL_14-08-20_4_BD368_Black_P_42435_JB_DM.jpg?v=1689962043&width=350&height=524&crop=center" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/0293/9277/files/10-01-25_S10_44_D2882FN_Burgundy_KP_ML_14-28-41_1131_CM-Kaliani_CM_CM_PXF.jpg?v=1760745027&width=350&height=524&crop=center" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/0293/9277/files/08-12-25_S5_45_MF22959F_Black_RA_IM_15-17-33_39131_PXF.jpg?v=1755203250&width=350&height=524&crop=center" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/0293/9277/files/04-29-24_S2_6_KDXD3112032_Denim_CXB_RL_11-49-47_18063_PXF.jpg?v=1714497819&width=350&height=524&crop=center" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/0293/9277/files/03-07-25_S3_32_FN1100FN_Pink_KS_SS_11-30-16_17154_PXF.jpg?v=1741541556&width=350&height=524&crop=center" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/0293/9277/products/09-13-22Studio2_RM_16-08-02_27_GW22X2134_Black_6316__EH.jpg?v=1663116553&width=350&height=524&crop=center" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/0293/9277/files/11-04-2024__335_Austin_Embellished_Maxi_Dress_Chocolate_LA.jpg?v=1732227034&width=350&height=524&crop=center" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/0293/9277/files/04-29-25_S5_38_24GWY4156_Black_CZ_DO_14-15-39_0287_PXF.jpg?v=1746051949&width=350&height=524&crop=center" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/0293/9277/files/04-03-25_S8_54_GW24K2162_Black_RK_JS_14-19-17_72664_CM-Amira_WG_PXF.jpg?v=1744743519&width=350&height=524&crop=center" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/0293/9277/products/10-04-22Studio7_SN_KP_11-43-58_45_D16537CW_Burgundy_7484_EH.jpg?v=1698189454&width=350&height=524&crop=center" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/0293/9277/files/11-28-22Studio8_ME_RL_15-14-07_48_BDS23863_Nude_P_0705_JB.jpg?v=1701478892&width=350&height=524&crop=center" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/0293/9277/files/01-06-25_S5_40_24GWQ8505_Black_CZ_DO_14-54-02_0491_PXF.jpg?v=1736481686&width=350&height=524&crop=center" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://cdn.shopify.com/s/files/1/0293/9277/files/06-24-25_S5_13_D53331P_Nudecombo_CZ_DO_11-26-21_12612_PXF.jpg?v=1750962011&width=350&height=524&crop=center" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- men section -->
+<section class="video-grid" id="men-grid" style="display: none;">
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://www.moderngentlemanmagazine.com/wp-content/uploads/2024/10/Moss-Green-Moment-650x975.jpeg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://www.moderngentlemanmagazine.com/wp-content/uploads/2024/10/Vintage-Inspired-Tweed-650x975.jpeg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://www.moderngentlemanmagazine.com/wp-content/uploads/2024/10/Burgundy-Brilliance-650x960.jpeg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://www.moderngentlemanmagazine.com/wp-content/uploads/2024/10/The-Classic-Navy-Blazer-Combo-650x975.jpeg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://www.moderngentlemanmagazine.com/wp-content/uploads/2024/10/Textured-Gray-Layers.jpeg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://www.moderngentlemanmagazine.com/wp-content/uploads/2024/10/The-White-Tuxedo-Twist.jpeg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://www.moderngentlemanmagazine.com/wp-content/uploads/2024/10/Polished-Gray-and-Black-Combo-650x974.jpeg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://www.moderngentlemanmagazine.com/wp-content/uploads/2024/10/The-Velvet-Dinner-Jacket-650x973.jpeg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://www.moderngentlemanmagazine.com/wp-content/uploads/2024/10/Classic-Monochrome-650x975.jpeg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://www.moderngentlemanmagazine.com/wp-content/uploads/2024/10/The-Subtle-Plaid-650x975.jpeg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://www.moderngentlemanmagazine.com/wp-content/uploads/2024/10/Classic-Black-Tuxedo-1.jpeg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://www.moderngentlemanmagazine.com/wp-content/uploads/2024/10/Midnight-Blue-Tuxedo-650x974.jpeg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://www.moderngentlemanmagazine.com/wp-content/uploads/2024/10/The-Cropped-Trousers-Look-650x813.jpeg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://www.moderngentlemanmagazine.com/wp-content/uploads/2024/10/The-Pastel-Suit-650x975.jpeg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://www.moderngentlemanmagazine.com/wp-content/uploads/2024/10/The-Patterned-Blazer.jpeg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://www.moderngentlemanmagazine.com/wp-content/uploads/2024/10/Military-Inspired-Formality-650x978.jpeg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="main.js"></script>
+
+
+<footer class="gen-footer">
+    <div class="footer-content">
+        <div class="footer-links-group">
+            <ul>
+                <li><a href="/about.html">About Us</a></li>
+                </ul>
+        </div>
+
+        <div class="footer-cta">
+            <h3>Contact Us</h3>
+            <a href="mailto:your-email@fashionhouse.com" class="cta-button">Book an Appointment</a>
+        </div>
+
+        <div class="footer-social">
+            <h3>Connect With Us</h3>
+            <div class="social-icons">
+                <a href="https://x.com/" target="_blank" aria-label="X (formerly Twitter)">
+                    <i class="fab fa-x-twitter"></i> 
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Horizon Vogue. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Back to top button -->
+<a href="#nav" class="back-to-top" aria-label="Back to top">↑</a>
+
+</body>
+
+</html>

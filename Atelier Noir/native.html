@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="general.css">
+<title>Casual Collection - Horizon Vogue</title>
+</head>
+
+<body class="category-page">
+<header id="nav" class="navigation-bar">
+    <nav class="nav-container">
+        <div class="img-container">
+            <img src="logo (2).png" alt="" class="img-logo">
+        </div>
+        <ul class="nav-items">
+            <li class="nav-list">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-list">
+                <a href="events.html" class="nav-link">Events</a>
+            </li>
+            <li class="nav-list">
+                <a href="products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-list">
+                <a href="board.html" class="nav-link">Boards</a>
+            </li>
+            <li class="nav-list">
+                <a href="contact.html" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-list">
+                <a href="dom.html" class="nav-link">DOM</a>
+            </li>
+        </ul>
+
+        <div class="cart-icon" onclick="openSlide()">🛒
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+
+        <div class="hamburger-container" onclick="openNav()">
+            <p class="hamburger">&#9776;</p>
+        </div>
+    </nav>
+</header>
+
+<!-- site marquee: announcements below navbar -->
+
+<div class="slide-container" id="myNav">
+    <button class="closebtn" onclick="closeNav()">&times;</button>
+
+    <ul class="slide-menu-container">
+        <li class="nav-list">
+            <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-list">
+            <a href="events.html" class="nav-link">Events</a>
+        </li>
+        <li class="nav-list">
+            <a href="products.html" class="nav-link">Products</a>
+        </li>
+        <li class="nav-list">
+            <a href="board.html" class="nav-link">Boards</a>
+        </li>
+        <li class="nav-list">
+            <a href="contact.html" class="nav-link">Contacts</a>
+        </li>
+        <li class="nav-list">
+            <a href="dom.html" class="nav-link">DOM</a>
+        </li>
+    </ul>
+</div>
+
+<main class="product-header">
+    <header class="product-header">
+        <h1>Native Collection</h1>
+        <h3>Cultural Heritage — Traditional Prints & Contemporary Native Wear</h3>
+    </header>
+    <div class="site-marquee" aria-hidden="true">
+    <div class="marquee-inner">
+        <span>Winter Fashion Show • Dec 15 • Holiday Collection Launch • Nov 25 • Master Styling Workshop • Jan 10 • Trunk Show • Dec 10</span>
+    </div>
+</div>
+
+    <hr class="section-divider"/>
+</main>
+
+<section class="women-section">
+    <div class="women-container">
+        <div class="toggle-buttons">
+            <button class="section-toggle" onclick="womenOpen()">Women Wears</button>
+            <button class="section-toggle2" onclick="menOpen()">Men Wears</button>
+        </div>
+    </div>
+</section>
+
+<section class="video-grid" id="women-grid">
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Asha Wrap Dress" data-price="120000"
+            data-image="images/cas-w0-01.jpg" data-desc="Perfect match for you."
+            data-des="Elegant long dress perfect for any occasion." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/blowse2.jpeg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Asha Wrap Dress
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/cas-wo-02.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Nala Midi Dress', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Nala Midi Dress
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/cas-wo-03.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Zuri Maxi Dress', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Zuri Maxi Dress
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/cas-wo-04.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Kemi A-Line Dress', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Kemi A-Line Dress
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/cas-wo-05.webp" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Ama Shift Dress', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Ama Shift Dress
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/cas-wo=06.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Ife Sheath Dress', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Ife Sheath Dress
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/cas-wo-07.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Sade Slip Dress', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Sade Slip Dress
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/cas-wo-08.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Ada Lace Dress', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Ada Lace Dress
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/cas-wo-09.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Lola Satin Dress', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Lola Satin Dress
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/cas-wo-10.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Maya Ruffle Dress', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Maya Ruffle Dress
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/cas-wo-11.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Tara Tiered Dress', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Tara Tiered Dress
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/cas-wo-12.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Bea Column Dress', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Bea Column Dress
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/cas-wo-13.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Yemi Printed Dress', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Yemi Printed Dress
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/cas-wo-14.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Chioma Peplum Dress', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Chioma Peplum Dress
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/cas-wo-15.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Ngozi Kimono Dress', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Ngozi Kimono Dress
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/cas-wo-16.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Femi Empire Dress', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Femi Empire Dress
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- men section -->
+<section class="video-grid" id="men-grid" style="display: none;">
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/guys-01.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Kofi Blazer', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Kofi Blazer
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/guys-02.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Tunde Tunic', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Tunde Tunic
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/guys-03.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Jide Tailored Jacket', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Jide Tailored Jacket
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/guys-04.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Bayo Shirt', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Bayo Shirt
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/guys-05.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Emeka Embroidered Shirt', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Emeka Embroidered Shirt
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/guys-06.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Olu Trousers', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Olu Trousers
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/guys-07.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Samson Suit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Samson Suit
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/guys-08.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Ike Linen Shirt', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Ike Linen Shirt
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/guys-09.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Chike Bomber Jacket', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Chike Bomber Jacket
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/guy-10.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Oke Explorer Coat', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Oke Explorer Coat
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/guys-11.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Nnamdi Nehru Jacket', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Nnamdi Nehru Jacket
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/guy-12.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Ayo Henley Shirt', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Ayo Henley Shirt
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/guys-13.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Dapo Denim Jacket', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Dapo Denim Jacket
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/guys-14.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Kunle Polo Shirt', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Kunle Polo Shirt
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/guys-15.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Seyi Cargo Pants', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Seyi Cargo Pants
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/guys-16.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Uche Waistcoat', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Uche Waistcoat
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="main.js"></script>
+
+
+<footer class="gen-footer">
+    <div class="footer-content">
+        <div class="footer-links-group">
+            <ul>
+                <li><a href="/about.html">About Us</a></li>
+                </ul>
+        </div>
+
+        <div class="footer-cta">
+            <h3>Contact Us</h3>
+            <a href="mailto:your-email@fashionhouse.com" class="cta-button">Book an Appointment</a>
+        </div>
+
+        <div class="footer-social">
+            <h3>Connect With Us</h3>
+            <div class="social-icons">
+                <a href="https://x.com/" target="_blank" aria-label="X (formerly Twitter)">
+                    <i class="fab fa-x-twitter"></i> 
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Horizon Vogue. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Back to top button -->
+<a href="#nav" class="back-to-top" aria-label="Back to top">↑</a>
+
+</body>
+
+</html>
